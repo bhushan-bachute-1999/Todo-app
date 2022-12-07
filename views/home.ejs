@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://kit.fontawesome.com/421af4dd0a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="task-header">
+            <%- include('_header') %>
+        </div>
+        
+        <div class="task-input">
+            <form action="" method="">
+                <div class="task-name">
+                    <label for="task">Description</label><br>
+                    <input type="text" id="task" name="task-name" placeholder="What do you need to do?" required>
+                </div>
+                <div class="task-cat-date">
+                    <div class="div-task-category">
+                        <label for="task-category">Category</label><br>
+                        <input type="text" id="task-category" name="task-category" placeholder="Choose a category" value="None">
+                    </div>
+                    <div class="div-task-date">
+                        <label for="task-date">Date</label><br>
+                        <input type="date" id="task-date" name="task-date" placeholder="Enter date">
+                    </div>
+                </div>
+                <div class="btns">
+                    <button type="submit" class="add-task">
+                        <i class="fa-solid fa-plus"></i>
+                        Add task
+                    </button>
+                    <button type="submit" class="delete-task">
+                        <i class="fa-solid fa-trash-can"></i>
+                        Delete task
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="task-display">
+
+        </div>
+    </div>
+</body>
+</html>
